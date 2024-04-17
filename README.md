@@ -38,11 +38,42 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by:  Hema dharshini N RegisterNumber: 212223220034
 */
+module jk_ff(q,qb,j,k,clock,reset);
+input j,k,clock, reset;
+output reg q,qb;
+
+always@(posedge(clock))
+
+begin
+    if(reset)
+	   begin 
+		  q <= q;
+		  qb <= qb;
+		  end
+	else
+		  begin
+		    if(j != k)
+			 begin 
+			   q <= j;
+				qb <= k;
+				end
+			else if(j == 1 && k == 1)	
+			  begin
+			    q <= 1'bz;
+				 qb <= 1'bz;
+				end
+		 end
+	end
+endmodule
 
 **RTL LOGIC FOR FLIPFLOPS**
+![d1](https://github.com/hema-dharshini5/JKFLIPFLOP-USING-IF-ELSE/assets/147117728/e94ad425-73f2-4f3e-b095-263c633408f8)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![d2](https://github.com/hema-dharshini5/JKFLIPFLOP-USING-IF-ELSE/assets/147117728/ee37432d-c0da-4c76-a776-06d20bde7df8)
 
 **RESULTS**
+Implementation of JK flipflop using verilog and validating their functionality using their functional tables is executed and the output is verified successfully.
