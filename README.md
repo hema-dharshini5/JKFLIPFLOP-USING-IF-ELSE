@@ -42,7 +42,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 6.Run the program.
 
 **PROGRAM**
-
+```
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
 Developed by:  Hema dharshini N RegisterNumber: 212223220034
 */
@@ -75,7 +75,7 @@ begin
 		 end
 	end
 endmodule
-
+```
 **RTL LOGIC FOR FLIPFLOPS**
 ![digitep7 1](https://github.com/hema-dharshini5/JKFLIPFLOP-USING-IF-ELSE/assets/147117728/f55cd221-1c04-4e77-a215-aff753ad5100)
 
